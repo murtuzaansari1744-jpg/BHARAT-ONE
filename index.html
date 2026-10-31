@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BHARAT ONE — नौकरी, सरकारी योजनाएं, टेंडर और डिजिटल सेवाओं की जानकारी एक जगह।">
+<title>BHARAT ONE | One India, One Platform</title>
+<style>
+:root{--navy:#07152e;--blue:#1457c5;--saffron:#ff9933;--green:#138808;--ink:#152238;--muted:#64748b;--paper:#f4f7fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--paper)}
+header{background:rgba(7,21,46,.97);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #07152e22}
+.nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.4px;font-size:21px}
+.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#fff 0 35%,var(--saffron) 36% 55%,#fff 56% 72%,var(--green) 73%);display:grid;place-items:center;color:#08214a;font-size:23px;font-weight:900;box-shadow:0 0 0 2px #ffffff55}
+.brand small{display:block;font-size:9px;letter-spacing:1.7px;color:#cbd5e1;margin-top:2px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{color:#e5edf9;text-decoration:none;font-size:13px}nav a:hover{color:#ffca75}
+.btn{display:inline-block;text-decoration:none;border:0;border-radius:999px;padding:12px 19px;font-weight:700;background:linear-gradient(90deg,var(--saffron),#ffc15c);color:#18243a;cursor:pointer}
+.hero{background:radial-gradient(circle at 80% 20%,#1d4e91 0,transparent 35%),linear-gradient(125deg,#07152e,#102d58 65%,#0a1d3d);color:#fff;padding:76px 20px 65px;overflow:hidden}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;color:#ffd08a;border:1px solid #ffffff44;border-radius:99px;padding:7px 12px;font-size:12px;letter-spacing:.5px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:20px 0 16px;letter-spacing:-2px}
+h1 span{color:#ffc15c}.hero p{font-size:18px;line-height:1.7;color:#d6e2f3;max-width:610px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.outline{color:white;border:1px solid #ffffff70;background:transparent}
+.hero-card{background:#ffffff12;border:1px solid #ffffff2b;border-radius:26px;padding:24px;backdrop-filter:blur(8px);box-shadow:0 20px 55px #0003}
+.india{font-size:76px;text-align:center;margin:4px 0 10px}.hero-card h3{text-align:center;margin:0 0 8px;font-size:22px}.hero-card p{text-align:center;font-size:14px;margin:0;color:#d8e5f8}
+.tricolor{height:5px;background:linear-gradient(90deg,var(--saffron) 0 33.3%,white 33.3% 66.6%,var(--green) 66.6%);opacity:.95}
+.wrap{max-width:1120px;margin:auto;padding:58px 20px}.section-head{text-align:center;margin-bottom:30px}.section-head h2{font-size:32px;margin:0 0 9px;color:#10284d}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e4eaf3;border-radius:18px;padding:23px;box-shadow:0 8px 25px #10284d0a;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #10284d14}
+.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:#edf4ff;margin-bottom:15px}
+.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.card a{display:inline-block;margin-top:14px;color:var(--blue);font-size:13px;font-weight:700;text-decoration:none}
+.notice{background:#fff8eb;border:1px solid #ffe0ad;border-radius:14px;padding:17px 19px;color:#654516;font-size:13px;line-height:1.6;margin-top:24px}
+.searchbox{display:flex;max-width:650px;margin:0 auto 28px;background:#fff;border:1px solid #dce5f1;border-radius:999px;padding:7px;box-shadow:0 8px 24px #10284d0a}
+.searchbox input{flex:1;min-width:0;border:0;outline:0;padding:9px 15px;font-size:15px;background:transparent}
+.searchbox button{border:0;border-radius:99px;padding:11px 20px;background:var(--blue);color:#fff;font-weight:700;cursor:pointer}
+#searchMsg{text-align:center;color:var(--muted);font-size:13px;min-height:18px}
+.about{background:#eaf1fb}.about-inner{max-width:1120px;margin:auto;padding:48px 20px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about h2{font-size:30px;margin:0 0 12px;color:#10284d}.about p{line-height:1.7;color:#52627a}
+.pillrow{display:flex;gap:9px;flex-wrap:wrap}.pill{background:white;border:1px solid #d9e4f2;border-radius:99px;padding:9px 13px;font-size:12px;font-weight:700;color:#23436f}
+footer{background:#07152e;color:#dbe6f5;padding:30px 20px;text-align:center;font-size:13px}
+footer strong{color:#fff}footer p{color:#aebed4;line-height:1.6}
+@media(max-width:760px){nav{display:none}.hero{padding:50px 18px}.hero-inner{grid-template-columns:1fr}.hero-card{max-width:430px}.grid{grid-template-columns:1fr 1fr}.about-inner{grid-template-columns:1fr}.wrap{padding:43px 17px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.brand{font-size:18px}.hero p{font-size:16px}.section-head h2{font-size:27px}.searchbox{border-radius:16px}.searchbox button{padding:10px 14px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+  <div class="brand"><div class="mark">B</div><div>BHARAT ONE<small>ONE INDIA • ONE PLATFORM</small></div></div>
+  <nav><a href="#services">सेवाएं</a><a href="#about">हमारे बारे में</a><a href="#disclaimer">महत्वपूर्ण सूचना</a></nav>
+  <a class="btn" href="#services">सेवाएं देखें</a>
+</div></header>
+<div class="tricolor"></div>
+<section class="hero"><div class="hero-inner">
+  <div><span class="eyebrow">आपका डिजिटल साथी • हर कदम पर</span>
+    <h1>BHARAT <span>ONE</span></h1>
+    <p>नौकरी, सरकारी योजनाओं, टेंडर और रोज़मर्रा की डिजिटल जानकारी — एक ही जगह, आसान हिंदी में।</p>
+    <div class="hero-actions"><a class="btn" href="#services">शुरू करें</a><a class="btn outline" href="#about">हमारे बारे में</a></div>
+  </div>
+  <div class="hero-card"><div class="india">🇮🇳</div><h3>One India, One Platform.</h3><p>सही जानकारी तक आसान पहुंच — हर भारतीय के लिए।</p></div>
+</div></section>
+<main>
+<section class="wrap" id="services">
+  <div class="section-head"><h2>आपको क्या चाहिए?</h2><p>अपनी जरूरत की सुविधा चुनें</p></div>
+  <div class="searchbox"><input id="serviceSearch" type="search" placeholder="जैसे: नौकरी, टेंडर, योजना खोजें…"><button onclick="searchServices()">खोजें</button></div>
+  <div id="searchMsg"></div>
+  <div class="grid" id="serviceGrid">
+    <article class="card" data-key="job jobs naukri भर्ती रोजगार"><div class="icon">💼</div><h3>नौकरी की जानकारी</h3><p>सरकारी और निजी नौकरियों की जानकारी और आधिकारिक आवेदन स्रोत खोजें।</p><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">NCS पोर्टल देखें ↗</a></article>
+    <article class="card" data-key="tender टेंडर सरकारी निविदा"><div class="icon">📄</div><h3>सरकारी टेंडर</h3><p>सरकारी खरीद और निविदाओं के आधिकारिक पोर्टल तक पहुंचें।</p><a href="https://eprocure.gov.in/eprocure/app" target="_blank" rel="noopener">टेंडर पोर्टल देखें ↗</a></article>
+    <article class="card" data-key="yojana scheme योजना सरकारी सहायता"><div class="icon">🏛️</div><h3>सरकारी योजनाएं</h3><p>सरकारी योजनाओं की जानकारी और आधिकारिक वेबसाइट खोजें।</p><a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">MyScheme देखें ↗</a></article>
+    <article class="card" data-key="business बिजनेस व्यापार startup"><div class="icon">🚀</div><h3>बिजनेस सहायता</h3><p>नया व्यवसाय शुरू करने, पंजीकरण और छोटे कारोबार की बुनियादी जानकारी।</p><a href="https://www.udyamregistration.gov.in/" target="_blank" rel="noopener">Udyam पोर्टल देखें ↗</a></article>
+    <article class="card" data-key="bill invoice बिल रसीद"><div class="icon">🧾</div><h3>बिल और रसीद</h3><p>छोटे दुकानदारों के लिए बिलिंग की जानकारी और उपयोगी संसाधन।</p><a href="#contact">जल्द आ रहा है</a></article>
+    <article class="card" data-key="online service डिजिटल सेवा ऑनलाइन"><div class="icon">📱</div><h3>डिजिटल सेवाएं</h3><p>ऑनलाइन सेवाओं के आधिकारिक स्रोत और इस्तेमाल करने की आसान गाइड।</p><a href="https://www.india.gov.in/" target="_blank" rel="noopener">National Portal देखें ↗</a></article>
+  </div>
+  <div class="notice" id="disclaimer"><strong>जरूरी सूचना:</strong> BHARAT ONE एक स्वतंत्र सूचना-प्लेटफॉर्म का शुरुआती डेमो है। यह कोई सरकारी वेबसाइट नहीं है और किसी सरकारी विभाग से संबद्ध होने का दावा नहीं करता। आवेदन, फीस या निजी दस्तावेज जमा करने से पहले हमेशा संबंधित आधिकारिक वेबसाइट पर जानकारी जांचें। अभी कुछ सुविधाएं केवल जानकारी और बाहरी आधिकारिक लिंक देती हैं।</div>
+</section>
+<section class="about" id="about"><div class="about-inner">
+  <div><h2>एक मंच, कई उपयोगी जानकारियां</h2><p>BHARAT ONE का उद्देश्य लोगों को भरोसेमंद सार्वजनिक जानकारी तक सरल पहुंच देना है। हम शुरुआत एक छोटे डिजिटल प्लेटफॉर्म से कर रहे हैं और उपयोगकर्ताओं की जरूरत के अनुसार इसे बेहतर बनाएंगे।</p></div>
+  <div class="pillrow"><span class="pill">आसान हिंदी</span><span class="pill">मोबाइल फ्रेंडली</span><span class="pill">आधिकारिक स्रोत</span><span class="pill">सबके लिए</span></div>
+</div></section>
+</main>
+<footer id="contact"><strong>BHARAT ONE</strong><p>One India, One Platform.</p><p>सुझाव या सहयोग के लिए: अपना संपर्क ईमेल/फोन यहां जोड़ें।<br>© 2026 BHARAT ONE — शुरुआती डेमो</p></footer>
+<script>
+function searchServices(){
+ const q=document.getElementById('serviceSearch').value.trim().toLowerCase();
+ const cards=[...document.querySelectorAll('#serviceGrid .card')];let shown=0;
+ cards.forEach(c=>{const match=!q||(c.innerText+' '+c.dataset.key).toLowerCase().includes(q);c.style.display=match?'block':'none';if(match)shown++;});
+ document.getElementById('searchMsg').textContent=q?(shown?shown+' सुविधा मिली।':'कोई सुविधा नहीं मिली — दूसरा शब्द खोजें।'):'सभी सुविधाएं दिखाई जा रही हैं।';
+}
+document.getElementById('serviceSearch').addEventListener('keydown',e=>{if(e.key==='Enter')searchServices()});
+</script>
+</body></html>
